@@ -1,9 +1,10 @@
+
 import { FiltersType } from "../types/filters.type.ts";
-import { MovieType } from "../types/movie.type.ts";
+import { MovieListItemType } from '../types/movie-list-item.type.ts';
 
 export async function fetchMoviesApi(
   filters: FiltersType,
-): Promise<MovieType[]> {
+): Promise<MovieListItemType[]> {
   const response = await fetch(generateUrl(filters));
   const data = await response.json();
   return data.results;
