@@ -10,12 +10,12 @@ export const signUpSchema = z.object({
       message: "Username must be shorter than or equal to 16 characters",
     }),
   password: z
-    .string({ required_error: "Username is required." })
+    .string({ required_error: "Password is required." })
     .min(4, {
-      message: "Username must be longer than or equal to 3 characters",
+      message: "Password must be longer than or equal to 4 characters",
     })
     .max(32, {
-      message: "Username must be shorter than or equal to 16 characters",
+      message: "Password must be shorter than or equal to 32 characters",
     }),
 });
 
