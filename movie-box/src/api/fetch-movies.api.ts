@@ -1,6 +1,5 @@
-
 import { FiltersType } from "../types/filters.type.ts";
-import { MovieListItemType } from '../types/movie-list-item.type.ts';
+import { MovieListItemType } from "../types/movie-list-item.type.ts";
 
 export async function fetchMoviesApi(
   filters: FiltersType,

@@ -1,0 +1,35 @@
+.bookmark-modal {
+  background-color: var(--color-surface-400);
+  color: var(--color-text-400);
+
+  inline-size: 100%;
+  max-inline-size: 20rem;
+
+  margin: auto;
+
+  border: none;
+  border-radius: var(--border-radius-400);
+
+  &::backdrop {
+    background-color: var(--color-backdrop);
+    backdrop-filter: blur(3px);
+  }
+
+  .content {
+    display: grid;
+    gap: 1rem;
+
+    padding: 1rem;
+
+    button {
+      overflow: hidden;
+
+      display: block;
+
+      max-inline-size: 100%;
+
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+}
